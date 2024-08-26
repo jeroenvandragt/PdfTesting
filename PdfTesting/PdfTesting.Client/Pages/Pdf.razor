@@ -1,0 +1,30 @@
+﻿@page "/generate-pdf"
+@inject HttpClient Http
+@inject IJSRuntime JS
+
+<button @onclick="() => GeneratePdf(false)">Generate and Download PDF (non-editable)</button>
+<button @onclick="() => GeneratePdf(true)">Generate and Download PDF (editable)</button>
+
+@code {
+    private async Task GeneratePdf ( bool editable )
+    {
+        try
+        {
+            var response = await Http.GetByteArrayAsync( $"http://localhost:5001/api/Pdf/GeneratePdf?editable={editable}" );
+            var base64Data = Convert.ToBase64String( response );
+
+            // Trigger a download in the browser
+            await JS.InvokeVoidAsync( "downloadPdf" , base64Data , "GeneratedDocument.pdf" );
+        }
+        catch (HttpRequestException e)
+        {
+            // Handle HTTP request exceptions
+            Console.WriteLine( $"Request error: {e.Message}" );
+        }
+        catch (Exception e)
+        {
+            // Handle other types of exceptions
+            Console.WriteLine( $"General error: {e.Message}" );
+        }
+    }
+}

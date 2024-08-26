@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35201.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfTesting", "PdfTesting\PdfTesting\PdfTesting.csproj", "{FA234CEB-1CA2-4D1E-861D-161EBF421645}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfTesting.Client", "PdfTesting\PdfTesting.Client\PdfTesting.Client.csproj", "{21651EAA-1DAC-4416-B3E6-3878E37CE013}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA234CEB-1CA2-4D1E-861D-161EBF421645}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA234CEB-1CA2-4D1E-861D-161EBF421645}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA234CEB-1CA2-4D1E-861D-161EBF421645}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA234CEB-1CA2-4D1E-861D-161EBF421645}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21651EAA-1DAC-4416-B3E6-3878E37CE013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21651EAA-1DAC-4416-B3E6-3878E37CE013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21651EAA-1DAC-4416-B3E6-3878E37CE013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21651EAA-1DAC-4416-B3E6-3878E37CE013}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E8862EC-76E9-41AB-848D-72656158A641}
+	EndGlobalSection
+EndGlobal
